@@ -30,4 +30,4 @@ Started this by making a small hello world and a counter that is increased by th
 
 The objective was to get up to date with the previous attempt at this. Actually went a bit further. 
 Previously I only had the sample todos and a checkbox that when clicked deleted them (defeating the purpose of the checkbox). 
-Here I added a button to delete the todo only when the checkbox signs that the todo is completed.
+Here I added a button to delete the todo only when the checkbox signs that the todo is completed and a red button to delete all the completed todos at onc and a red button to delete all the completed todos at once.
