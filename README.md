@@ -16,9 +16,18 @@ I'm remaking the project basically like the first time, just a bit quicker since
 * [ ] Use Cloud storage to retrieve and save todos
 * [ ] Add multiple screens
 * [ ] Add Timer
+* [ ] Add Scrolling
 
 ### Hello World
 
 ![Screenshot](HelloWorldScreen.png)
 
-Started this by making a small hello world and a counter that is increased by this button-
+Started this by making a small hello world and a counter that is increased by this button.
+
+### Up to Date 
+
+![Screenshot](upToDateScreen.png)
+
+The objective was to get up to date with the previous attempt at this. Actually went a bit further. 
+Previously I only had the sample todos and a checkbox that when clicked deleted them (defeating the purpose of the checkbox). 
+Here I added a button to delete the todo only when the checkbox signs that the todo is completed.
