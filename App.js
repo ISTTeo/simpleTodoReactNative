@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button,StyleSheet, Text, View } from 'react-native';
+import { Button,StyleSheet, Text, View } from 'react-native'
 import todosData from "./todosData"
 import TodoItem from "./TodoItem"
 export default class App extends React.Component {
@@ -10,6 +10,7 @@ export default class App extends React.Component {
     }
     this.handleClick = this.handleClick.bind(this)
     this.handleChange = this.handleChange.bind(this)
+    this.deleteCompleted = this.deleteCompleted.bind(this)
   }
 
   handleClick(id) {
@@ -32,6 +33,11 @@ export default class App extends React.Component {
     })
   }
 
+  deleteCompleted() {
+    const todos = this.state.todos
+    const filtered = todos.filter(x => !x.completed)
+    this.setState({todos:filtered})
+  }
   render() {
     const todoItems = this.state.todos.map( item =>
       <TodoItem
@@ -44,6 +50,12 @@ export default class App extends React.Component {
 
     return (
       <View style={styles.container}>
+      <Button
+        onPress = {this.deleteCompleted}
+        title="deleteCompleted"
+        color="#ff0000"
+        accessibilityLabel="ClickClickClick"
+      />
       <Text>This many todos: {todoItems.length}</Text>
 
       {todoItems}
