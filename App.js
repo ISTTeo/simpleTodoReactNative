@@ -21,6 +21,11 @@ export default class App extends React.Component {
   }
 
   render() {
+    const todoItems = this.state.todos.map( item =>
+      <TodoItem key={item.id} text={item.text}/>
+
+    )
+
     return (
       <View style={styles.container}>
       <Text>Hello World!</Text>
@@ -31,9 +36,9 @@ export default class App extends React.Component {
         color="#841584"
         accessibilityLabel="ClickClickClick"
       />
-      <TodoItem text="Hakuna Matata"/>
+      {todoItems}
       </View>
-    );
+    )
   }
 
 
