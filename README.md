@@ -20,13 +20,13 @@ I'm remaking the project basically like the first time, just a bit quicker since
 
 ### Hello World
 
-![Screenshot](HelloWorldScreen.png)
+ ![Screenshot](HelloWorldScreen.png)
 
 Started this by making a small hello world and a counter that is increased by this button.
 
 ### Up to Date 
 
-![Screenshot](upToDateScreen.png)
+ ![Screenshot](upToDateScreen.png)
 
 The objective was to get up to date with the previous attempt at this. Actually went a bit further. 
 Previously I only had the sample todos and a checkbox that when clicked deleted them (defeating the purpose of the checkbox). 
