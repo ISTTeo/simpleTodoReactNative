@@ -8,12 +8,18 @@ export default class App extends React.Component {
     this.state = {
       todos:todosData
     }
+    this.handleClick = this.handleClick.bind(this)
   }
 
+  handleClick(id) {
+    const todos = this.state.todos
+    const filtered = todos.filter(x => x.id !== id)
 
+    this.setState({todos:filtered})
+  }
   render() {
     const todoItems = this.state.todos.map( item =>
-      <TodoItem key={item.id} text={item.text}/>
+      <TodoItem key={item.id} item={item} handleClick={this.handleClick}/>
     )
 
     return (

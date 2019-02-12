@@ -4,8 +4,15 @@ import {Button} from 'react-native-elements'
 function TodoItem(props) {
   return(
     <View>
-    <Button title={props.text} />
+
+      <Text> {props.item.text} </Text>
+      <Button
+      title="DEL"
+      onPress={() => props.handleClick(props.item.id)}
+      />
+
     </View>
+
   )
 }
 
