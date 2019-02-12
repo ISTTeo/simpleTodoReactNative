@@ -1,12 +1,13 @@
 import React from 'react';
 import { Button,StyleSheet, Text, View } from 'react-native';
-
+import todosData from "./todosData"
+import TodoItem from "./TodoItem"
 export default class App extends React.Component {
   constructor() {
     super()
     this.state = {
-      count:0
-
+      count:0,
+      todos:todosData
     }
     this.handleClick = this.handleClick.bind(this)
   }
@@ -30,6 +31,7 @@ export default class App extends React.Component {
         color="#841584"
         accessibilityLabel="ClickClickClick"
       />
+      <TodoItem text="Hakuna Matata"/>
       </View>
     );
   }
