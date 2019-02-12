@@ -39,9 +39,16 @@ export default class App extends React.Component {
 
   addTodo(text) {
     const allTodos = this.state.todos
-    const lastTodo = allTodos.slice(-1)[0] //gets last element of the list of todos
-    const newId = lastTodo.id + 1
-    const newTodo = {id:newId, text:"NEWTODO", completed:false} //uses sample text to test
+    var newTodo = {}
+    if(allTodos.length > 0) {
+      const lastTodo = allTodos.slice(-1)[0] //gets last element of the list of todos
+      const newId = lastTodo.id + 1
+      newTodo = {id:newId, text:"NEWTODO", completed:false} //uses sample text to test
+    } else {
+      newTodo = {id:0, text:"NEWTODO", completed:false} //uses sample text to test
+
+    }
+
     allTodos.push(newTodo)
     this.setState({todos:allTodos})
   }
