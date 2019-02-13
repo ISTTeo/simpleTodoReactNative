@@ -24,10 +24,15 @@ I'm remaking the project basically like the first time, just a bit quicker since
 
 Started this by making a small hello world and a counter that is increased by this button.
 
-### Up to Date 
+### Up to Date
 
  ![Screenshot](upToDateScreen.png)
 
-The objective was to get up to date with the previous attempt at this. Actually went a bit further. 
-Previously I only had the sample todos and a checkbox that when clicked deleted them (defeating the purpose of the checkbox). 
+The objective was to get up to date with the previous attempt at this. Actually went a bit further.
+Previously I only had the sample todos and a checkbox that when clicked deleted them (defeating the purpose of the checkbox).
 Here I added a button to delete the todo only when the checkbox signs that the todo is completed and a red button to delete all the completed todos at onc and a red button to delete all the completed todos at once.
+
+### Up to the ReactJS - CURRENT STAGE
+Make it up to date with the reactJS counterpart at the time of starting this project
+* Add a component that enables you to add todo's
+* Save todo's locally so they can persist between sessions
